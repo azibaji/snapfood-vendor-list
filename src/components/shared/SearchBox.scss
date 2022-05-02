@@ -1,0 +1,30 @@
+.search-box{
+    background-color:#f8f8f8;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    @media(min-width:768px){
+        width:60%;
+        margin:0px auto;
+    }
+    input{
+        width: 90%;
+        border: none;
+        background-color: unset;
+        height: 48px;
+        padding: 0px 10px;
+      &:focus{
+          outline: none;
+        //   background-color: white;
+      }
+    }
+    button{
+        width:10%;
+        border:none;
+        background-color: unset;
+        cursor: pointer;
+        svg{
+            width:14px;
+        }
+    }
+}
