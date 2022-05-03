@@ -1,5 +1,7 @@
+@import '../../../public/assets/sass/variables';
+
 .search-box{
-    background-color:#f8f8f8;
+    background-color:$color-light-gray;
     display: flex;
     justify-content: space-between;
     border-radius: 10px;
@@ -16,7 +18,6 @@
         padding: 0px 10px;
       &:focus{
           outline: none;
-        //   background-color: white;
       }
     }
     button{

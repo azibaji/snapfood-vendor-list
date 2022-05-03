@@ -1,8 +1,9 @@
+@import '../../../public/assets/sass/variables';
 .vendor{
     width:100%;
     margin:20px;
-    -webkit-box-shadow: 0px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(225,225,225,0); 
-    box-shadow: 0px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(225,225,225,0);
+    -webkit-box-shadow: $box-shadow;
+    box-shadow: $box-shadow;
     border-radius: 7px;
     overflow: hidden;
     @media(min-width:768px){
@@ -25,15 +26,15 @@
             position: absolute;
             top:7%;
             right:0%;
-            background-color: white;
-            color:green;
+            background-color: $color-white;
+            color:$color-dark-green;
             font-weight: bold;
             padding: 5px;
             border-top-left-radius: 15px;
             border-bottom-left-radius: 15px;
-            -webkit-box-shadow: 0px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(225,225,225,0); 
-            box-shadow: 0px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(225,225,225,0);
-            font-size: 12px;
+            -webkit-box-shadow: $box-shadow;
+            box-shadow: $box-shadow;
+            font-size: $fs-subtitle;
         }
         .logo{
             position: absolute;
@@ -42,9 +43,9 @@
             right: 3%;
             border-radius: 7px;
             padding: 5px;
-            background-color:white;
-            -webkit-box-shadow: 0px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(225,225,225,0); 
-            box-shadow: 0px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(225,225,225,0);
+            background-color:$color-white;
+            -webkit-box-shadow: $box-shadow;
+            box-shadow: $box-shadow;
             img{
                 border-radius: 7px;
                 width: 100%;
@@ -65,20 +66,20 @@
             direction: rtl;
             &__title{
                 h3{
-                    font-size:16px;
+                    font-size:$fs-title;
                 }
             }
             &__rank{
                 display: flex;
                 justify-content: flex-end;
                 direction: ltr;
-                font-size: 12px;
+                font-size: $fs-subtitle;
                 .rank{
-                    color:green;
-                    background-color: #f3f8ef;
+                    color:$color-dark-green;
+                    background-color: $color-light-green;
                     padding: 4px;
                     svg{
-                        fill: green;
+                        fill: $color-dark-green;
                         width: 12px;
                     }
                 }
@@ -86,21 +87,21 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    color: #999797;
+                    color: $color-dark-gray;
                 }
             }
         }
         .body{
-            font-size:14px;
+            font-size:$fs-body;
         }
         .delivery{
             display: flex;
             justify-content: space-between;
             direction: rtl;
-            font-size: 12px;
+            font-size: $fs-subtitle;
             &__type{
                 .type{
-                    color: #999797;
+                    color: $color-dark-gray;
                 }
                 .cost{
                     margin-right:10px;

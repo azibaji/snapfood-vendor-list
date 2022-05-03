@@ -1,6 +1,8 @@
+@import '../../../public/assets/sass/variables';
+
 .vendors{
     &__count{
-        font-size: 16px;
+        font-size: $fs-title;
         font-weight: 700;
         padding: 0px 14px;
     }
