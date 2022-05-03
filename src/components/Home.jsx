@@ -25,10 +25,12 @@ class Home extends Component {
     search = (keyword) =>{
         this.setState({keyword})
     }
-    filter = (filterName) =>{
-        let newfilter = this.state.filters.filter(filter => filter.name === filterName)
-        newfilter[0].value = !newfilter[0].value
-        this.setState({filter:newfilter[0]})
+    filter = (filterName, filterValue) =>{
+        let filter ={
+            name:filterName,
+            value:filterValue
+        }
+        this.setState({filter})
     }
     render() { 
         const {filters, keyword, filter} = this.state
