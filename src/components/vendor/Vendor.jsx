@@ -9,9 +9,12 @@ class Vendor extends Component {
                     <div className="img">
                         <img src={vendor.backgroundImage} />
                     </div>
-                    <p className="notice">
-                        {vendor.best_coupon}
-                    </p>
+
+                    {vendor.best_coupon && 
+                        <p className="notice">
+                            {vendor.best_coupon}
+                        </p>
+                    }
                     <div className="logo">
                         <img src={vendor.defLogo} />
                     </div>
@@ -57,9 +60,11 @@ class Vendor extends Component {
 
                         </div>
 
-                        <div className="delivery__time">
-                        {vendor.deliveryTime}
-                        </div>
+                       {vendor.deliveryTime !==0 &&  
+                            <div className="delivery__time">
+                                {vendor.deliveryTime}
+                            </div>
+                        }  
                     </div>
                 </div>
             </div>
