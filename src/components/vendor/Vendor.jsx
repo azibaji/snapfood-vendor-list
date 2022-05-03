@@ -44,7 +44,6 @@ class Vendor extends Component {
                         <p className="body__description">
                             {vendor.description}
                         </p>
-                        
                     </div>
 
                     <div className="delivery">
@@ -73,6 +72,6 @@ class Vendor extends Component {
     }
 }
 Vendor.propTypes = {
-    vendot: PropTypes.object
+    vendor: PropTypes.object
 }
 export default Vendor;
