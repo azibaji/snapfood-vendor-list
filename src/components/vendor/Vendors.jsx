@@ -25,11 +25,17 @@ class Vendors extends Component {
         this.setState({filteredVendors})
     }
     filterVendors(){
-        const prop=String(this.props.filter.name)
-            const filteredVendors = this.state.vendors.filter(vendor => vendor.data[prop] === true)
+        let filteredVendors;
+        if(this.props.filter.value){
+            const prop=String(this.props.filter.name)
+            filteredVendors = this.state.vendors.filter(vendor => vendor.data[prop] === true)
             console.log(filteredVendors)
-            this.setState({filteredVendors})
+            
+        } else{
+            filteredVendors=this.state.vendors
+        }
         
+        this.setState({filteredVendors})
     }
     async getVendors(){
         const params = {
