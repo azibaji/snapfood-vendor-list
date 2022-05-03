@@ -3,9 +3,10 @@
     display: flex;
     justify-content: space-between;
     border-radius: 10px;
+    width:80%;
+    margin:0px auto;
     @media(min-width:768px){
         width:60%;
-        margin:0px auto;
     }
     input{
         width: 90%;
