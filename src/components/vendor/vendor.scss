@@ -77,7 +77,12 @@
                 .rank{
                     color:$color-dark-green;
                     background-color: $color-light-green;
-                    padding: 4px;
+                    padding: 2px 4px;
+                    border-radius: 5px;
+                    margin-right: 3px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     svg{
                         fill: $color-dark-green;
                         width: 12px;

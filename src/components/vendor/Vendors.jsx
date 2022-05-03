@@ -47,11 +47,9 @@ class Vendors extends Component {
         try{
             const {data} = await axios.get('https://snappfood.ir/mobile/v3/restaurant/vendors-list', {params})
             if(data){
-                console.log(data.data.finalResult)
                 const vendors = data.data.finalResult.filter(d=> d.type === 'VENDOR')
                 const openShops = (data.data.finalResult.filter(d=> d.type === 'TEXT')).find(d=>d.type ==='TEXT')
                 this.setState({vendors, openShops, filteredVendors : vendors})
-                console.log(vendors)
             }
         }
         catch(e){
@@ -62,9 +60,11 @@ class Vendors extends Component {
         const {filteredVendors, openShops} = this.state
         return (
             <div className="vendors">
+
                 <p className="vendors__count">
                     {openShops.data}
                 </p>
+                
                 <div className="vendors__items">
                     {filteredVendors.map((vendor, index) => (
                         <Vendor 
