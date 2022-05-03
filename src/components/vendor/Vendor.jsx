@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import './vendor.scss'
 class Vendor extends Component {
     render() { 
@@ -71,5 +72,7 @@ class Vendor extends Component {
             );
     }
 }
- 
+Vendor.propTypes = {
+    vendot: PropTypes.object
+}
 export default Vendor;
